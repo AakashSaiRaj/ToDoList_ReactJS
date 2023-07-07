@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 2 / span 1;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+}
+.item3{
+  grid-row:2;
+  grid-column: 2 / span 1;
+}
+.item4{
+  grid-column:1;
+  grid-row: 1 / span 3;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+  <div class="grid-item item1">1</div>
+  <div class="grid-item item2">2</div>
+  <div class="grid-item item3">3</div>  
+  <div class="grid-item item4">4</div>  
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+</html>
+
+
+
+
+/// App 
+
+
+<div className="App">
+      <h1>TODO LIST</h1>
+      <div className="mainContainer">
+        <div className="rowContainer">
+          <Button variant="contained">Add Task</Button>
+          <Button variant="contained">Status</Button>
+        </div>
+        <div className="itemContainer">
+          {/* <Item /> */}
+          <Items />
+        </div>
+      </div>
+    </div>
